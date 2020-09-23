@@ -1,0 +1,50 @@
+{"slider":[
+	{
+		"image": "image1.jpg",
+		"text": {
+			"h1": "Height Performans",
+			"p": "Lorem Ipsum is simply</br> dummy text of the printing </br>Lorem Ipsum is simply dummy text of the printing"
+		},
+		"url": "https://www.w3schools.com/howto/img_woods_wide.jpg"
+	},
+	{
+		"image": "image2.jpg",
+		"text": {
+			"h1": "Why do we use it?",
+			"p": "Lorem Ipsum is simply dummy text of the printing </br>Lorem Ipsum is simply dummy text of the printing "
+		},
+		"url": "https://www.w3schools.com/howto/img_snow.jpg"
+	},
+	{
+		"image": "image3.jpg",
+		"text": {
+			"h1": "Where does it come from?",
+			"p": "Lorem Ipsum is simply dummy text of the printing </br>Ucuncu slaydin metni burada yer alacaq. "
+		},
+		"url": "https://www.w3schools.com/howto/img_mountains.jpg"
+	},
+	{
+		"image": "image1.jpg",
+		"text": {
+			"h1": "Why do we use it?",
+			"p": "Lorem Ipsum is simply dummy text of the printing </br>Lorem Ipsum is simply dummy text of the printing "
+		},
+		"url": "https://www.w3schools.com/howto/img_woods_wide.jpg"
+	},
+	{
+		"image": "image4.jpg",
+		"text": {
+			"h1": "Where can I get some?",
+			"p": "Dorduncu slaydin metni </br>burada yer alacaq. Lorem Ipsum is </br>simply dummy text"
+		},
+		"url": "https://www.w3schools.com/howto/img_nature.jpg"
+	},
+	{
+		"image": "image5.jpg",
+		"text": {
+			"h1": "why we",
+			"p": "Besinci slaydin metni burada yer alacaq.</br>choose with we "
+		},
+		"url": "https://www.w3schools.com/howto/img_5terre.jpg"
+	}
+]}
