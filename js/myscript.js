@@ -1,26 +1,14 @@
 $(document).ready( function(){
     loadDoc("slider.json", openJson);
-    let sliderWidth;
-		let sliderHeight;
     let sldr,txt;
     let t;
     let imgs = [];
-    //let imgTags = [];
     let cardTxt = [];
     let urls = [];
     let cardText = document.getElementById("card-text");
     let inc=0;
     let dir=1;
-    //with AJAX take data from json 
-    /*
-    $(window).on('resize', init)
-    init();
-    function init(){
-      sliderWidth = $("#slider").width();
-      sliderHeight = $("#slider").height();
-      $("#slide").css({ width: sliderWidth * imgs.length,});
-      $("#slide>img").css({ width: sliderWidth, height: sliderHeight, objectFit: 'cover'});	
-    }*/
+   
     function loadDoc(url, cFunction) {
       let xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
@@ -39,29 +27,25 @@ $(document).ready( function(){
         imgs[i] = txt.image;
         cardTxt[i] = txt.text;
         urls[i] = txt.url;
-       // imgTags[i]= '<img src="img/'+ txt.image +'" />'; 
       }
       createList();
-      //createSlide();
       start();
       click();
     }
-    /*
-    function createSlide(){
-      $("#slide").append( imgTags );
-    }
-*/
+  
     function createList(){
       for( i=1; i <=imgs.length; i++ ){
           $("#thumbs").append('<div>'+i+'</div>');
       }
     }
+
     function click(){
       $("#thumbs>div").click(function(){
         inc = $(this).index()-1;
         start();
       });
     }
+
     function show(){
         if( inc >= imgs.length ) inc = 0;
         if( inc < 0 ) inc = imgs.length-1;
@@ -74,16 +58,7 @@ $(document).ready( function(){
         })
 				.animate({right: 0}, "slow", function(){
           $("#slider").css("backgroundImage","url('img/" + imgs[inc] + "')");
-        })
-        
-        /*
-        $("#slider")
-            .css("background","url('img/"+ imgs[inc] +" ') top/cover no-repeat")
-            .fadeOut(0)
-            .fadeIn("slow");
-            content(inc);
-        */
-        
+        })  
     }
 
     function content() {
